@@ -2,7 +2,7 @@
 
 *A Python console-based program inspired by the classic Angry Birds*
 
-![download](https://github.com/user-attachments/assets/01ad1ed8-3d12-4b34-bdea-197adcd2a179)
+![angryyyyyyybirddssss](https://github.com/user-attachments/assets/01ad1ed8-3d12-4b34-bdea-197adcd2a179)
 
 
 ## Group Information
