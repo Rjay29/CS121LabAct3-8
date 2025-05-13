@@ -44,6 +44,11 @@ This program simulates the Angry Birds game in a text-based console environment.
     - See its special ability in action
     - Choose to play again or quit
 
+
+# 📊Class Diagram
+![UML DIAGRAM](https://github.com/user-attachments/assets/7eb3bdf6-ba22-45b9-a227-a3dfbc2d1350)
+
+
 ## 📋 Code Structure
 ```python
 # Base class
@@ -84,6 +89,3 @@ Pick another bird? (y/n):
 - Inspired by the original Angry Birds game by Rovio Entertainment
 - ASCII art sourced from various online creators
 - Thanks to our CS 121 instructor for guidance
-
-# 📊CLASS DIAGRAM
-![UML DIAGRAM](https://github.com/user-attachments/assets/7eb3bdf6-ba22-45b9-a227-a3dfbc2d1350)
