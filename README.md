@@ -2,8 +2,6 @@
 
 *A Python console-based program inspired by the classic Angry Birds*
 
-![UML DIAGRAM](https://github.com/user-attachments/assets/6d0ec219-8591-494b-a5d0-fcfe17dcd496)
-
 ## Group Information
 **Course:** CS 121: ACP  
 **Group 8**  
