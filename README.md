@@ -1,127 +1,86 @@
-# CS121LabAct
+# Angry Birds Simulation 🐦 
 
-# CS 121  Lab Activity 3
-This is a project by *Group 8 in CS 121: ACP*
+*A Python console-based program inspired by the classic Angry Birds*
 
-# 🐦 Angry Birds
-### This team project is derive or inspired by the classic game **Angry Birds.**
-
-# Group Members
-| Name | GitHub Username|
+## Group Information
+**Course:** CS 121: ACP  
+**Group 8**  
+**Group Members:**
+| Name | GitHub |
 |------|----------------|
 | Aeron Almira | [ALfish152](https://github.com/ALfish152)|
 | Rjay Arazula | [rjay29](https://github.com/rjay29)|
 | Aaron Mercado | [Aa-ronMer-cado](https://github.com/Aa-ronMer-cado)
 | Sheri Lou Hong | [vixea118](https://github.com/vixea118)
 
-## Features
+## 🎯 About the Project
+This program simulates the Angry Birds game in a text-based console environment. Players can select different bird types, each with unique abilities, and see their ASCII art representations along with special ability descriptions.
 
-- **Base Class (`AngryBird`)**:
-  - Common attributes: `name`, `size`, `speed`, and `image` (ASCII art).
-  - Common methods:
-    - `launch()`: Simulates launching the bird.
-    - `activate_ability()`: Activates the bird's special ability.
-    - `print_image()`: Displays the bird's ASCII art.
+## ✨ Key Features
+- **7 Unique Bird Types** with special abilities
+- **Interactive Console Menu** for bird selection
+- **ASCII Art Visuals** for each bird
+- **Object-Oriented Design** with inheritance
+- **Special Ability System** for each bird type
 
-- **Bird Types (Derived Classes)**:
-  Each bird inherits from the base class and has a unique special ability:
-  - **Red Bird**: No special ability.
-  - **Blue Bird**: Splits into three smaller birds.
-  - **Yellow Bird**: Accelerates with incredible speed.
-  - **Black Bird**: Explodes.
-  - **White Bird**: Drops an egg.
-  - **Green Bird**: Acts as a boomerang.
-  - **Big Red Bird**: Causes massive damage on impact.
+## 🐦 Bird Types
+1. **Red Bird** - Standard bird with no special ability
+2. **Blue Bird** - Splits into three smaller birds
+3. **Yellow Bird** - Accelerates with incredible speed
+4. **Black Bird** - Explodes on impact
+5. **White Bird** - Drops an explosive egg
+6. **Green Bird** - Boomerang effect
+7. **Big Red Bird** - Causes massive damage
 
-- **Interactive Console**:
-  - Choose a bird to launch by entering a number (1-7).
-  - View the bird's ASCII art.
-  - Activate the bird's special ability.
-  - Option to pick another bird or quit the game.
-#
+## 🚀 How to Run
+1. Ensure you have Python 3.x installed
+2. Clone/download the repository
+3. Run the main Python file:
+   ```bash
+   python angry_birds.py
+4. Follow the on-screen instructions:
+    - Enter a number (1-7) to select a bird
+    - View the bird's ASCII art
+    - See its special ability in action
+    - Choose to play again or quit
 
-# Code Snippet
-
+## 📋 Code Structure
 ```python
-birds = {
-        '1': RedBird(),
-        '2': BlueBird(),
-        '3': YellowBird(),
-        '4': BlackBird(),
-        '5': WhiteBird(),
-        '6': GreenBird(),
-        '7': BigRedBird()
-    }
+# Base class
+class AngryBird:
+    # Common attributes and methods
+    ...
 
-print("Welcome to Angry Birds!")
-while True:
-    print("Choose a bird to launch:")
-    print("1. Red Bird \n2. Blue Bird\n3. Yellow Bird\n4. Black Bird\n5. White Bird\n6. Green Bird\n7. Big Red Bird")
-    choice = input("Enter your bird (1-7) or 'q' to quit: ").strip()
-    if choice.lower() == 'q':
-        print("Goodbye!")
-        break
-    if choice not in birds:
-        print("Invalid choice. Please Try again.\n")
-        continue
-
-    selected_bird = birds[choice]
-    selected_bird.print_image()
-    print(f"You chose {selected_bird.name}!")
-    selected_bird.launch()
-    selected_bird.activate_ability()
-    
-    while True:
-        play_again = input("\nPick another bird? (y/n): ").lower().strip()
-        
-        if play_again == 'n':
-            print("Goodbye!")
-            exit()
-        elif play_again == 'y':
-            print("\n============================================================\n")
-            break
-        else:
-            print("Invalid choice. Please try again.")
-
-```
-
-
-# ASCII Image
-```python
+# Derived classes (one per bird type)
 class RedBird(AngryBird):
-    def __init__(self):
-        super().__init__("Red Bird", "medium", "normal", """
-              %#+*#                
-           %##%%#*+*#              
-          %#*****%***              
-             ###*********#         
-          ##**************++#      
-        #%#*****************+=#    
-       %##********************++#  
-      %###*********************++% 
-     #####********@@@%##****##%@@* 
-     %####********@@@@@@@@@@@@@@@+#
-  %@@%####********#%::-@@-=#%-:=#**
- %@@%%###########*##-....--:...##*#
-%@@%%%#####*####***###**+==--*##**#
-%  @@%######**********++++===--***%
-   %% %#######**+-::::-*++++++===# 
-       %######=--::::::::--::::*   
-         %##+======---------=*     
-            #****++==++**##        
-""")
-    def activate_ability(self):
-        print(f"{self.name} has no special ability!")
+    ...
+
+class BlueBird(AngryBird):
+    ...
 ```
+## 🖼️ Sample Output
 
+```python
+Welcome to Angry Birds!
+Choose a bird to launch:
+1. Red Bird
+2. Blue Bird
+3. Yellow Bird
+4. Black Bird
+5. White Bird
+6. Green Bird
+7. Big Red Bird
 
+Enter your bird (1-7) or 'q' to quit: 2
 
-![Sample Screenshot](image.png)
+[ASCII art of Blue Bird]
+You chose Blue Bird!
+Blue Bird launched!
+Blue Bird splits into three smaller birds!
 
-
-😓
-- Main List
-    - SubList
-        - Another list
-
-1. Test
+Pick another bird? (y/n):
+```
+# 🙏 Acknowledgements
+- Inspired by the original Angry Birds game by Rovio Entertainment
+- ASCII art sourced from various online creators
+- Thanks to our CS 121 instructor for guidance
