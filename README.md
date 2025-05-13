@@ -2,7 +2,7 @@
 
 *A Python console-based program inspired by the classic Angry Birds*
 
-#📊CLASS DIAGRAM
+# 📊CLASS DIAGRAM
 ![UML DIAGRAM](https://github.com/user-attachments/assets/7eb3bdf6-ba22-45b9-a227-a3dfbc2d1350)
 
 ## Group Information
